@@ -1,0 +1,10 @@
+# Default
+__pycache__/
+*.so
+build/
+.env
+.venv
+env/
+venv/
+.vscode
+.env
