@@ -2,9 +2,17 @@
 
 ## Проект
 
-* Python 3.11
-* Django
+* Django (Python 3.11)
+  * Pod Deployment
 * PostgreSQL
+  * Pod Deployment => StatefulSet
+* Ingress
+  * Nginx-controller
+
+In progress:
+
+* Helm
+* StatefulSet
 
 ## Запуск
 

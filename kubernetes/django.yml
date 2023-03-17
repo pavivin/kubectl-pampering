@@ -17,6 +17,13 @@ spec:
       containers:
         - name: django
           image: pavivin/kuber:latest
+          resources:
+            limits:
+              memory: 512Mi
+              cpu: "1"
+            requests:
+              memory: 256Mi
+              cpu: "0.2"
           ports:
             - containerPort: 8000
           env:
@@ -34,13 +41,6 @@ spec:
               value: django
             - name: DATABASE_HOST
               value: postgres-service
-              resources:
-      limits:
-        memory: 512Mi
-        cpu: "1"
-      requests:
-        memory: 256Mi
-        cpu: "0.2"
 ---
 apiVersion: v1
 kind: Service
@@ -62,7 +62,7 @@ metadata:
     nginx.ingress.kubernetes.io/rewrite-target: /
 spec:
   rules:
-    - host: huscker.com
+    - host: pavivin.com
       http:
         paths:
           - path: /
