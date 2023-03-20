@@ -17,6 +17,7 @@ spec:
       containers:
         - name: django
           image: pavivin/kuber:latest
+          imagePullPolicy: "Always"
           resources:
             limits:
               memory: 512Mi

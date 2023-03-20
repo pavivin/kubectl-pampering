@@ -26,3 +26,11 @@ kubectl apply -f kubernetes/django.yml
 
 kubectl create secret generic postgres-credentials --from-literal=user=u --from-literal=password=b
 ```
+
+## Обновить приложение
+
+```bash
+docker build .
+docker push REGISTRY_NAME
+docker pull REGISTRY_NAME
+```
