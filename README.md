@@ -5,7 +5,7 @@
 * Django (Python 3.11)
   * Pod Deployment
 * PostgreSQL
-  * Pod Deployment => StatefulSet
+  * Pod StatefulSet
 * Ingress
   * Nginx-controller
 
